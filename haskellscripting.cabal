@@ -31,6 +31,7 @@ test-suite haskellscripting-test
                     , directory
                     , MissingH
                     , process
+                    , safe
     ghc-options:      -Wall -Werror -threaded -rtsopts -with-rtsopts=-N
     default-language: Haskell2010
 
