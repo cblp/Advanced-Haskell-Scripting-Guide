@@ -1,6 +1,6 @@
-name:           betterthanbash
+name:           haskellscripting
 version:        0.0.0.0
-homepage:       https://github.com/cblp/betterthanbash
+homepage:       https://github.com/cblp/Advanced-Haskell-Scripting-Guide
 author:         Yuriy Syrovetskiy
 maintainer:     cblp@cblp.su
 category:       System
@@ -14,20 +14,20 @@ library
     default-language: Haskell2010
     ghc-options:      -Wall -Werror
 
-executable betterthanbash-exe
+executable haskellscripting-exe
     hs-source-dirs:   app
     main-is:          Main.hs
     ghc-options:      -Wall -Werror -threaded -rtsopts -with-rtsopts=-N
     build-depends:    base
-                    , betterthanbash
+                    , haskellscripting
     default-language: Haskell2010
 
-test-suite betterthanbash-test
+test-suite haskellscripting-test
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
     main-is:          Spec.hs
     build-depends:    base
-                    , betterthanbash
+                    , haskellscripting
                     , directory
                     , MissingH
                     , process
@@ -36,4 +36,4 @@ test-suite betterthanbash-test
 
 source-repository head
     type:     git
-    location: https://github.com/cblp/betterthanbash
+    location: https://github.com/cblp/Advanced-Haskell-Scripting-Guide
